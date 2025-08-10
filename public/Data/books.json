@@ -1,0 +1,12 @@
+[
+  { "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "image": "images/gatsby.jpg" },
+  { "title": "To Kill a Mockingbird", "author": "Harper Lee", "image": "images/mockingbird.jpg" },
+  { "title": "1984", "author": "George Orwell", "image": "images/1984.jpg" },
+  { "title": "Pride and Prejudice", "author": "Jane Austen", "image": "images/pride.jpg" },
+  { "title": "The Catcher in the Rye", "author": "J.D. Salinger", "image": "images/catcher.jpg" },
+  { "title": "The Hobbit", "author": "J.R.R. Tolkien", "image": "images/hobbit.jpg" },
+  { "title": "Moby-Dick", "author": "Herman Melville", "image": "images/mobydick.jpg" },
+  { "title": "War and Peace", "author": "Leo Tolstoy", "image": "images/warpeace.jpg" },
+  { "title": "The Odyssey", "author": "Homer", "image": "images/odyssey.jpg" },
+  { "title": "The Lord of the Rings", "author": "J.R.R. Tolkien", "image": "images/lotr.jpg" }
+]

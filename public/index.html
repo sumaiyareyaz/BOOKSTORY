@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Library Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">📚</div>
+        <div class="brand-text">The Books</div>
+      </div>
+
+      <nav class="menu">
+        <button id="menu-discover" class="menu-item active">Discover</button>
+        <button id="menu-category" class="menu-item">Category</button>
+        <button id="menu-reading" class="menu-item">Reading List</button>
+        <button id="menu-downloads" class="menu-item">Downloads</button>
+        <button id="menu-favorites" class="menu-item">Favorites</button>
+        <button id="menu-logout" class="menu-item">Log Out</button>
+
+      </nav>
+
+      <div class="sidebar-foot">v1.0 • eLibrary</div>
+    </aside>
+
+    <!-- CENTER -->
+    <main class="main-area">
+      <header class="topbar">
+        <h1>Discover</h1>
+        <div class="search-row">
+          <select id="categoryFilter"><option value="">All categories</option></select>
+          <input id="searchInput" type="text" placeholder="Find your next read...">
+          <button id="searchBtn">Search</button>
+        </div>
+      </header>
+
+      <section class="recommend-section">
+        <h3>Recommended for you</h3>
+        <div id="recommendRow" class="recommend-row"></div>
+      </section>
+
+      <section class="category-section">
+        <h3>Categories</h3>
+        <div id="categoryGrid" class="category-grid">
+            <div id="categoryGrid" class="category-grid"></div>
+
+<!-- This will show books when a category is clicked -->
+<div id="bookDisplay"></div>
+
+        </div>
+      </section>
+
+      <section class="books-section">
+        <h3>All books</h3>
+        <div id="bookList" class="book-list"></div>
+      </section>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="rightbar">
+      <div class="profile-card">
+        <img class="avatar" src="images/bookstory.jpg" alt="profile">
+        <div class="profile-name">BOOKSTORY</div>
+        <div class="profile-role">Reader • Premium</div>
+      </div>
+
+      <div class="mini-stats">
+        <div class="stat"><div class="stat-num" id="statRead">3</div><div class="stat-label">Reading</div></div>
+        <div class="stat"><div class="stat-num" id="statFav">24</div><div class="stat-label">Favorites</div></div>
+      </div>
+
+      <div class="quick-actions">
+        <button class="action">+ Add Book</button>
+        <button class="action ghost">Settings</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalAuthor"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="js/data.js"></script>
+<script src="js/categories.js"></script>
+
+</body>
+</html>
